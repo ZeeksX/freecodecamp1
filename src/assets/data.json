@@ -1,0 +1,49 @@
+{
+	"data": [
+		{
+			"name": "Heater1",
+			"link": "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3",
+			"letter": "Q"
+		},
+		{
+			"name": "Heater2",
+			"link": "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3",
+			"letter": "W"
+		},
+		{
+			"name": "Heater3",
+			"link": "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3",
+			"letter": "E"
+		},
+		{
+			"name": "Heater4",
+			"link": "https://s3.amazonaws.com/freecodecamp/drums/Heater-4.mp3",
+			"letter": "A"
+		},
+		{
+			"name": "Clap",
+			"link": "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3",
+			"letter": "S"
+		},
+		{
+			"name": "Open-HH",
+			"link": "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3",
+			"letter": "D"
+		},
+		{
+			"name": "Kick-n-Hat",
+			"link": "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3",
+			"letter": "Z"
+		},
+		{
+			"name": "Kick",
+			"link": "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3",
+			"letter": "X"
+		},
+		{
+			"name": "Closed-HH",
+			"link": "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3",
+			"letter": "C"
+		}
+	]
+}
