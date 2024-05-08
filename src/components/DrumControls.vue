@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     updateVolume(event) {
-      this.audioStore.volume = parseFloat(event.target.value);
+      this.audioStore.volume = event.target.value;
       this.audioStore.text = "Volume: " + Math.round(event.target.value * 100);
     }
   }
