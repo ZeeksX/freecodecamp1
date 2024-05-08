@@ -1,7 +1,10 @@
 <template>
-    <div v-for="pad in drumData" :key="pad.letter" class="drum-pad">
-        <DrumPad :pad="pad" />
+    <div class="homepage-one">
+        <div v-for="pad in drumData" :key="pad.letter" class="drum-pad">
+            <DrumPad :pad="pad" />
+        </div>
     </div>
+
 </template>
 <script>
 import data from "@/assets/data.json"
@@ -23,11 +26,16 @@ export default {
     background-color: #808080;
     width: 100px;
     height: 80px;
-    margin-right: 10px;
     border-radius: 5px;
-    padding-top: 35px;
     box-sizing: border-box;
     cursor: pointer;
     box-shadow: black 3px 3px 5px;
+}
+.homepage-one {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex-direction: row;
+  width: 60%;
 }
 </style>

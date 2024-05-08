@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="drum-letter">
         <p> {{ pad.letter }}</p>
     </div>
 </template>
@@ -11,3 +11,14 @@ export default {
     }
 }
 </script>
+<style>
+p{
+    font-weight: 900;
+}
+#drum-letter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+</style>

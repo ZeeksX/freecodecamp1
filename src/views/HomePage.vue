@@ -1,24 +1,24 @@
 <template>
   <div class="home-page">
     <DrumPage />
+    <DrumControls />
   </div>
 </template>
 
 <script>
 import DrumPage from "@/components/DrumPage.vue";
+import DrumControls from "@/components/DrumControls.vue";
 export default {
   name: "HomePage",
   components: {
     DrumPage,
-
+    DrumControls
   },
 };
 </script>
 <style>
-.home-page {
+.home-page{
   display: flex;
-  flex-wrap: wrap;
-  gap: 4rem;
   flex-direction: row;
 }
 </style>
