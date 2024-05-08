@@ -1,6 +1,6 @@
 <template>
     <div v-for="pad in drumData" :key="pad.letter" class="drum-pad">
-        <DrumPad :pad="pad"/>
+        <DrumPad :pad="pad" />
     </div>
 </template>
 <script>
@@ -20,6 +20,14 @@ export default {
 </script>
 <style>
 .drum-pad {
-    background-color: aqua;
+    background-color: #808080;
+    width: 100px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: black 3px 3px 5px;
 }
 </style>

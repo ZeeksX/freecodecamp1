@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-         <DrumPage />
+    <DrumPage />
   </div>
 </template>
 
@@ -9,7 +9,16 @@ import DrumPage from "@/components/DrumPage.vue";
 export default {
   name: "HomePage",
   components: {
-    DrumPage
+    DrumPage,
+
   },
 };
 </script>
+<style>
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  flex-direction: row;
+}
+</style>
