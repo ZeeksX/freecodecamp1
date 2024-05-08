@@ -34,7 +34,11 @@ export default {
     updateVolume(event) {
       this.audioStore.volume = event.target.value;
       this.audioStore.text = "Volume: " + Math.round(event.target.value * 100);
+      setTimeout(() => {
+        this.audioStore.text = "";
+      }, 1000);
     }
+
   }
 }
 </script>
