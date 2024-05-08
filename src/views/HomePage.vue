@@ -17,8 +17,10 @@ export default {
 };
 </script>
 <style>
-.home-page{
+.home-page {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
 }
 </style>

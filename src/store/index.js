@@ -1,13 +1,13 @@
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
-export const useCounterStore = defineStore('counter', {
-  state: () => ({ count: 0 }),
-  getters: {
-    double: state => state.count * 2,
-  },
-  actions: {
-    increment() {
-      this.count++
-    },
-  },
-})
+export const useAudioStore = defineStore("audio", {
+	state: () => ({
+		text: "",
+	}),
+	getters: {
+		updateVolume(event) {
+			this.text = "Volume: " + event.target.value;
+		},
+	},
+	actions: {},
+});
