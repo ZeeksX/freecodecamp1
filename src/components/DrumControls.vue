@@ -7,9 +7,9 @@
         <span class="slider"></span>
       </label>
     </div>
-    <p id="details" >{{ audioStore.text }}</p>
+    <p id="details">{{ audioStore.text }}</p>
     <div class="volume-slider">
-      <input type="range" min="0" max="100" step="1" @input="updateVolume"/>
+      <input type="range" min="0" max="1" step="0.01" v-model="audioStore.volume" @input="updateVolume" />
     </div>
     <div class="bank">
       <span>Bank</span>
@@ -32,20 +32,21 @@ export default {
   },
   methods: {
     updateVolume(event) {
-      this.audioStore.text = "Volume: " + event.target.value
-    },
-  },
+      this.audioStore.volume = parseFloat(event.target.value);
+      this.audioStore.text = "Volume: " + Math.round(event.target.value * 100);
+    }
+  }
 }
 </script>
 
 <style>
 .power,
 .bank {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .bank {
-    margin-top: 0.95rem;
+  margin-top: 0.95rem;
 }
 </style>
