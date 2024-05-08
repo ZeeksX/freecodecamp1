@@ -1,24 +1,26 @@
 <template>
     <div class="homepage-one">
-        <div v-for="pad in drumData" :key="pad.letter" class="drum-pad">
+        <div v-for="pad in drum" :key="pad.letter" class="drum-pad">
             <DrumPad :pad="pad" />
         </div>
     </div>
 
 </template>
 <script>
-import data from "@/assets/data.json"
+
 import DrumPad from "@/components/DrumPad.vue"
+import { useAudioStore } from "@/store";
 export default {
     name: "DrumPage",
     data() {
         return {
-            drumData: data.data
+            drum: useAudioStore().drumData
         }
     },
     components: {
         DrumPad
-    }
+    },
+
 }
 </script>
 <style>

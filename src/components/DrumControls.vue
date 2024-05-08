@@ -1,5 +1,5 @@
 <template>
-  <div class="drum-controls" >
+  <div class="drum-controls">
     <div class="power">
       <span>Power</span>
       <label class="switch">
@@ -14,7 +14,7 @@
     <div class="bank" :class="{disabled: !audioStore.powerSwitch}">
       <span>Bank</span>
       <label class="switch">
-        <input type="checkbox">
+        <input type="checkbox" v-model="audioStore.changeKit" @input="updateKit">
         <span class="slider"></span>
       </label>
     </div>
@@ -23,7 +23,7 @@
 
 <script>
 import { useAudioStore } from '@/store';
-
+import data from "@/assets/data.json"
 export default {
   data() {
     return {
@@ -38,8 +38,14 @@ export default {
       setTimeout(() => {
         this.audioStore.text = "";
       }, 1000);
+    },
+    updateKit() {
+      if (this.audioStore.changeKit) {
+        this.audioStore.drumData = data.chord;
+      } else {
+        this.audioStore.drumData = data.data;
+      }
     }
-
   }
 }
 </script>
@@ -54,7 +60,7 @@ export default {
 .bank {
   margin-top: 0.95rem;
 }
-.active{
+.active {
   opacity: 1;
   pointer-events: all;
 }

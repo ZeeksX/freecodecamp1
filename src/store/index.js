@@ -1,10 +1,12 @@
 import { defineStore } from "pinia";
-
+import data from "@/assets/data.json"
 export const useAudioStore = defineStore("audio", {
 	state: () => ({
 		text: "",
 		volume: "",
-    powerSwitch: false
+    powerSwitch: false,
+    drumData: data.data,
+    changeKit: false
 	}),
 	actions: {
 		updateVolume(newVolume) {
