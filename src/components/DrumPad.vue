@@ -1,5 +1,5 @@
 <template>
-    <div id="drum-letter" @click="playSound">
+    <div id="drum-letter" @click="playSound" :class="{ disabled: !audioStore.powerSwitch }">
         <p>{{ pad.letter }}</p>
         <audio ref="audio" :src="pad.link" id="audio-tag"></audio>
     </div>

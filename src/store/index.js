@@ -4,6 +4,7 @@ export const useAudioStore = defineStore("audio", {
 	state: () => ({
 		text: "",
 		volume: "",
+    powerSwitch: false
 	}),
 	actions: {
 		updateVolume(newVolume) {
