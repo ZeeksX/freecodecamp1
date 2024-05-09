@@ -1,6 +1,6 @@
 <template>
     <div class="homepage-one">
-        <div v-for="pad in drum" :key="pad.letter" class="drum-pad">
+        <div v-for="pad in drumData" :key="pad.letter" class="drum-pad">
             <DrumPad :pad="pad" />
         </div>
     </div>
@@ -12,22 +12,22 @@ import DrumPad from "@/components/DrumPad.vue"
 import { useAudioStore } from "@/store";
 export default {
     name: "DrumPage",
-    data() {
-        return {
-            drum: useAudioStore().drumData
-        }
-    },
     components: {
         DrumPad
     },
+     computed: {
+        drumData() {
+            return useAudioStore().drumData;
+        }
+    }
 
 }
 </script>
 <style>
 .drum-pad {
     background-color: #808080;
-    width: 100px;
-    height: 80px;
+    width: 6.25rem;
+    height: 5rem;
     border-radius: 5px;
     box-sizing: border-box;
     cursor: pointer;

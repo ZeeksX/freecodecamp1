@@ -16,7 +16,7 @@ export default {
 <style>
 .container {
   outline: 5px solid orange;
-  width: 660px;
+  width: 41.25rem;
   text-align: center;
   background-color: #b3b3b3;
   display: flex;

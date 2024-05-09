@@ -16,6 +16,7 @@ export const useAudioStore = defineStore("audio", {
 			audio.volume = this.volume;
 		},
 		updateKit() {
+			this.text = this.changeKit ? "Smooth Piano Kit": "Heater kit"
 			this.drumData = this.changeKit ? data.chord : data.data;
 		},
 	},
