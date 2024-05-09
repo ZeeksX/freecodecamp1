@@ -1,12 +1,13 @@
 import { defineStore } from "pinia";
-import data from "@/assets/data.json"
+import data from "@/assets/data.json";
+
 export const useAudioStore = defineStore("audio", {
 	state: () => ({
 		text: "",
 		volume: "",
-    powerSwitch: false,
-    drumData: data.data,
-    changeKit: false
+		drumData: data.data,
+		powerSwitch: false,
+		changeKit: false,
 	}),
 	actions: {
 		updateVolume(newVolume) {
@@ -14,8 +15,9 @@ export const useAudioStore = defineStore("audio", {
 			const audio = document.getElementById("audio-tag");
 			audio.volume = this.volume;
 		},
+		updateKit() {
+			this.drumData = this.changeKit ? data.chord : data.data;
+		},
 	},
-	getters: {
-		// You can add getters here if needed
-	},
+	getters: {},
 });

@@ -48,47 +48,47 @@
 	],
 	"chord": [
 		{
-			"name": "Heater1",
+			"name": "Chord 1",
 			"link": "https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3",
 			"letter": "Q"
 		},
 		{
-			"name": "Heater2",
-			"link": "https://s3.amazonaws.com/freecodecamp/drums/Chord-2.mp3",
+			"name": "Chord 2",
+			"link": "https://s3.amazonaws.com/freecodecamp/drums/Chord_2.mp3",
 			"letter": "W"
 		},
 		{
-			"name": "Heater3",
-			"link": "https://s3.amazonaws.com/freecodecamp/drums/Chord-3.mp3",
+			"name": "Chord 3",
+			"link": "https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3",
 			"letter": "E"
 		},
 		{
-			"name": "Heater4",
+			"name": "Shaker",
 			"link": "https://s3.amazonaws.com/freecodecamp/drums/Give_us_a_light.mp3",
 			"letter": "A"
 		},
 		{
-			"name": "Clap",
+			"name": "Open-HH",
 			"link": "https://s3.amazonaws.com/freecodecamp/drums/Dry_Ohh.mp3",
 			"letter": "S"
 		},
 		{
-			"name": "Open-HH",
+			"name": "Closed-HH",
 			"link": "https://s3.amazonaws.com/freecodecamp/drums/Bld_H1.mp3",
 			"letter": "D"
 		},
 		{
-			"name": "Kick-n-Hat",
+			"name": "Punchy Kick",
 			"link": "https://s3.amazonaws.com/freecodecamp/drums/punchy_kick_1.mp3",
 			"letter": "Z"
 		},
 		{
-			"name": "Kick",
+			"name": "Side Stick",
 			"link": "https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3",
 			"letter": "X"
 		},
 		{
-			"name": "Closed-HH",
+			"name": "Snare",
 			"link": "https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3",
 			"letter": "C"
 		}
